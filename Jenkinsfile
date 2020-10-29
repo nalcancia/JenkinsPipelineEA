@@ -27,7 +27,7 @@ pipeline {
 
         stage('Display Java Home Dir') {
           steps {
-            echo '"\'"${JAVA_HOME}"\'"'
+            sh 'echo $JAVA_HOME'
           }
         }
 
